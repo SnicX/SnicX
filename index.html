@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Сайт</title>
+  <title>Website</title>
   <style>
     :root {
       --bg: #0f1226;
@@ -11,15 +11,9 @@
       --accent: #7c5cff;
       --muted: #c7c9d1;
     }
-
     * { box-sizing: border-box; }
-
-    html, body {
-      height: 100%;
-    }
-
+    html, body { height: 100%; margin: 0; }
     body {
-      margin: 0;
       font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
       color: var(--fg);
       background: radial-gradient(1200px 800px at 80% -10%, #2a1a72 0%, rgba(42,26,114,0) 70%),
@@ -30,7 +24,6 @@
       min-height: 100svh;
       padding: 40px 0;
     }
-
     .card {
       width: min(820px, 92vw);
       padding: clamp(24px, 4vw, 48px);
@@ -41,39 +34,10 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.25);
       text-align: center;
     }
-
-    .title {
-      margin: 0 0 12px;
-      font-size: clamp(28px, 6vw, 56px);
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      line-height: 1.1;
-      text-wrap: balance;
-    }
-
-    .subtitle {
-      margin: 0;
-      font-size: clamp(16px, 3.2vw, 24px);
-      line-height: 1.4;
-      color: var(--muted);
-      text-wrap: pretty;
-    }
-
-    .about {
-      margin-top: 32px;
-      font-size: 18px;
-      line-height: 1.6;
-      color: var(--fg);
-    }
-
-    .buttons {
-      margin-top: 24px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
+    .title { margin: 0 0 12px; font-size: clamp(28px, 6vw, 56px); font-weight: 800; letter-spacing: 0.5px; line-height: 1.1; }
+    .subtitle { margin: 0; font-size: clamp(16px, 3.2vw, 24px); line-height: 1.4; color: var(--muted); }
+    .about { margin-top: 32px; font-size: 18px; line-height: 1.6; color: var(--fg); }
+    .buttons { margin-top: 24px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
     .btn {
       display: flex;
       align-items: center;
@@ -87,53 +51,33 @@
       transition: background 0.3s, padding 0.3s;
       overflow: hidden;
     }
-
-    .btn img {
-      width: 20px;
-      height: 20px;
-    }
-
-    .album {
-      margin-top: 40px;
-      text-align: center;
-    }
-
+    .btn img { width: 20px; height: 20px; }
+    .album { margin-top: 40px; text-align: center; }
     .album img {
       width: 200px;
       border-radius: 16px;
       margin-bottom: 16px;
       box-shadow: 0 6px 20px rgba(0,0,0,0.4);
     }
-
-    .album h2 {
-      margin: 0 0 12px;
-      font-size: 24px;
-      font-weight: 700;
-    }
-
-    .album p {
-      font-size: 16px;
-      line-height: 1.5;
-      color: var(--muted);
-    }
-
+    .album h2 { margin: 0 0 12px; font-size: 24px; font-weight: 700; }
+    .album p { font-size: 16px; line-height: 1.5; color: var(--muted); }
     .spacer { height: clamp(8px, 2.5vh, 20px); }
   </style>
 </head>
 <body>
   <main class="card" role="main">
-    <h1 class="title">Привет, это SnicX! <span class="accent">Сайт пока находится в разработке</span></h1>
+    <h1 class="title">Hi, this is SnicX! <span class="accent">The website is still under construction</span></h1>
     <div class="spacer" aria-hidden="true"></div>
-    <p class="subtitle">Но тут будет много чего интересного.</p>
+    <p class="subtitle">But there will be a lot of interesting things here.</p>
 
     <div class="about">
-      <p>Я — SnicX, музыкант и продюсер. Создаю музыку в разных жанрах, экспериментирую со звуком и делюсь своим творчеством с миром. Здесь вы сможете узнать больше обо мне и моей музыке.</p>
+      <p>I am SnicX, a musician and producer. I create music in different genres, experiment with sound, and share my creativity with the world. Here you will be able to learn more about me and my music.</p>
     </div>
 
     <div class="buttons">
       <a class="btn" href="https://music.yandex.ru/artist/21808808?ysclid=m5mr09kpku934387296" target="_blank">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Yandex_Music_icon.svg" alt="Яндекс.Музыка" />
-        <span>Яндекс.Музыка</span>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Yandex_Music_icon.svg" alt="Yandex Music" />
+        <span>Yandex Music</span>
       </a>
       <a class="btn" href="https://open.spotify.com/artist/77BSfgf74zfagJ9UGHLnfR" target="_blank">
         <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify" />
@@ -146,10 +90,10 @@
     </div>
 
     <div class="album">
-      <img src="https://via.placeholder.com/200x200.png?text=Memphis+Language+Vol.3" alt="Memphis Language Vol.3" />
+      <img src="https://avatars.yandex.net/get-music-content/46b525b3275765890ca527970901dc8f80641ad3/600x600" alt="Memphis Language Vol.3" />
       <h2>Memphis Language Vol.3</h2>
-      <p>Мой новый альбом, в котором собраны тёмные, атмосферные и энергичные треки. В релиз вошли фит-сотрудничества с талантливыми артистами, которые помогли придать звучанию свежие краски и уникальный вайб.</p>
-      <p><strong>На фите:</strong> onephob1a, 1have$.</p>
+      <p>My new album featuring dark, atmospheric, and energetic tracks. The release includes collaborations with talented artists who helped bring fresh colors and a unique vibe to the sound.</p>
+      <p><strong>Featuring:</strong> onephob1a, 1have$</p>
     </div>
   </main>
 </body>
