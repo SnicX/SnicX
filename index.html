@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SnicX Website</title>
+  <title>Website</title>
   <style>
     :root {
       --bg: #0f1226;
@@ -51,7 +51,7 @@
       transition: background 0.3s, padding 0.3s;
       overflow: hidden;
     }
-    .btn img { width: 20px; height: 20px; }
+    .btn img { width: 20px; height: 20px; border-radius: 50%; }
     .album { margin-top: 40px; text-align: center; }
     .album img {
       width: 200px;
@@ -61,14 +61,20 @@
     }
     .album h2 { margin: 0 0 12px; font-size: 24px; font-weight: 700; }
     .album p { font-size: 16px; line-height: 1.5; color: var(--muted); }
-    .spacer { height: clamp(8px, 2.5vh, 20px); }
+    .youtube, .telegram { margin-top: 40px; text-align: center; }
+    .youtube p, .telegram p { font-size: 18px; line-height: 1.6; color: var(--fg); }
+    .achievements { margin-top: 40px; text-align: left; }
+    .achievements h2 { font-size: 22px; font-weight: 700; margin-bottom: 16px; text-align: center; }
+    .achievements ul { list-style: none; padding: 0; }
+    .achievements li { font-size: 16px; line-height: 1.6; margin: 6px 0; color: var(--fg); }
+    .footer { margin-top: 40px; font-size: 16px; color: var(--muted); text-align: center; }
   </style>
 </head>
 <body>
   <main class="card" role="main">
-    <h1 class="title">Hi, this is SnicX! <span class="accent">The website is still under construction</span></h1>
+    <h1 class="title">Hi, this is SnicX! <span class="accent">It's my website.</span></h1>
     <div class="spacer" aria-hidden="true"></div>
-    <p class="subtitle">But there will be a lot of interesting things here.</p>
+    <p class="subtitle">There will be a lot of interesting things here.</p>
 
     <div class="about">
       <p>I am SnicX, a musician and producer. I create music in different genres, experiment with sound, and share my creativity with the world. Here you will be able to learn more about me and my music.</p>
@@ -95,7 +101,46 @@
       <p>My new album featuring dark, atmospheric, and energetic tracks. The release includes collaborations with talented artists who helped bring fresh colors and a unique vibe to the sound.</p>
       <p><strong>Featuring:</strong> onephob1a, 1have$</p>
     </div>
-  </main>
+
+    <div class="youtube">
+      <p>If you enjoy my music and want to see more of my creative process, exclusive content, and behind-the-scenes moments, make sure to check out my YouTube channel!</p>
+      <div class="buttons">
+        <a class="btn" href="https://youtube.com/@snicx?si=aD-yUNHV4nPfdqXU" target="_blank">
+          <img src="https://yt3.googleusercontent.com/ytc/AIf8zZT_zQGX6iV6CqCw5eQK3P5Yk0K9h9Ot7z1lqL5e=s176-c-k-c0x00ffffff-no-rj" alt="YouTube Channel" />
+          <span>YouTube</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="achievements">
+      <h2>Achievements</h2>
+      <ul>
+        <li>November 8, 2024 – First track "Morning"</li>
+        <li>November 15, 2024 – 1 million YouTube views</li>
+        <li>February 23, 2025 – First album "Memphis Language"</li>
+        <li>April 16, 2025 – First track with 100,000 listens "SnicX - NORTH SITE"</li>
+        <li>June 18, 2025 – First collaboration "SnicX, 1have$ - HOES"</li>
+        <li>June 27, 2025 – Second album "Memphis Language Vol.3"</li>
+      </ul>
+    </div>
+
+    <div class="telegram">
+      <p>This is my Telegram channel.</p>
+      <div class="buttons">
+        <a class="btn" href="https://t.me/sn1cx" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" />
+          <span>Telegram</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Thank you for reading, have a great day!</p>
+    </div>
+
+    <div class="footer">
+      <p style="color: white; font-size: 20px; font-weight: 700;">SnicX</p>
+      <p style="color: white; font-size: 14px;">© 2025 SnicX. All rights reserved.</p>
+  </main> 
 </body>
 </html>
-
